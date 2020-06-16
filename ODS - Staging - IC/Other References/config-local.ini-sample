@@ -1,0 +1,23 @@
+[source]
+dbname=
+host=
+password=
+port=
+username=
+
+[staged]
+dbname=
+host=
+password=
+port=
+username=
+
+[sql]
+schema=edfi
+source=SQL/EDFI
+staged=SQL/Staged
+
+#list all table names that should be included in the load in the following format
+[tables] 
+school=School
+schoolyeartype=SchoolYearType

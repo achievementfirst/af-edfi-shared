@@ -1,0 +1,17 @@
+SELECT [AssessmentIdentifier]
+      ,[IdentificationCode]
+      ,[Namespace]
+      ,[AssessmentItemCategoryDescriptorId]
+      ,[MaxRawScore]
+      ,[ItemText]
+      ,[CorrectResponse]
+      ,[ExpectedTimeAssessed]
+      ,[Nomenclature]
+      ,[AssessmentItemURI]
+      ,[Discriminator]
+      ,[CreateDate]
+      ,[LastModifiedDate]
+      ,CAST([Id] AS varchar(36)) AS [Id]
+  FROM [edfi].[AssessmentItem]
+  WHERE [Namespace] = 'uri://illuminateed.com';
+

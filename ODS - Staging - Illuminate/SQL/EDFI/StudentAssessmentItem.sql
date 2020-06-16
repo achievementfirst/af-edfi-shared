@@ -1,0 +1,15 @@
+SELECT [AssessmentIdentifier]
+      ,[IdentificationCode]
+      ,[Namespace]
+      ,[StudentAssessmentIdentifier]
+      ,[StudentUSI]
+      ,[AssessmentResponse]
+      ,[DescriptiveFeedback]
+      ,[ResponseIndicatorDescriptorId]
+      ,[AssessmentItemResultDescriptorId]
+      ,[RawScoreResult]
+      ,[TimeAssessed]
+      ,[CreateDate]
+  FROM [edfi].[StudentAssessmentItem]
+WHERE [Namespace] = 'uri://illuminateed.com';
+

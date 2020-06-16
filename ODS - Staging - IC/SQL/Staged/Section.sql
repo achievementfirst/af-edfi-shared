@@ -1,0 +1,23 @@
+INSERT INTO [edfi].[Section]
+           ([LocalCourseCode]
+           ,[SchoolId]
+           ,[SchoolYear]
+           ,[SectionIdentifier]
+           ,[SessionName]
+           ,[SequenceOfCourse]
+           ,[EducationalEnvironmentDescriptorId]
+           ,[MediumOfInstructionDescriptorId]
+           ,[PopulationServedDescriptorId]
+           ,[AvailableCredits]
+           ,[AvailableCreditTypeDescriptorId]
+           ,[AvailableCreditConversion]
+           ,[InstructionLanguageDescriptorId]
+           ,[LocationSchoolId]
+           ,[LocationClassroomIdentificationCode]
+           ,[OfficialAttendancePeriod]
+           ,[Discriminator]
+           ,[CreateDate]
+           ,[LastModifiedDate]
+           ,[Id])
+VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+ON CONFLICT DO NOTHING;

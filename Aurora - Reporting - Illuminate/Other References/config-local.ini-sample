@@ -1,0 +1,32 @@
+[redshift]
+dbname=
+host=
+password=
+port=
+username=
+
+[s3]
+region={region}
+s3_upload_bucket={S3 bucket name}
+s3_upload_path={Name of folder within the S3 bucket}
+execution_role={Iam role with permissions to copy data to Redshift}
+
+[tables]
+assessment=illuminate
+assessmentitem=illuminate
+itemstandard=illuminate
+standard=illuminate
+studentaggregatescore=illuminate
+studentitemscore=illuminate
+reportinggroup=illuminate
+itemreportinggroup=illuminate
+
+[source]
+dbname=
+host=
+password=
+port=
+username=
+
+[year]
+load_year=2020

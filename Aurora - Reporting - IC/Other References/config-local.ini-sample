@@ -1,0 +1,31 @@
+[redshift]
+dbname=
+host=
+password=
+port=
+username=
+
+[s3]
+region={region}
+s3_upload_bucket={S3 bucket name}
+s3_upload_path={Name of folder within the S3 bucket}
+execution_role={Iam role with permissions to copy data to Redshift}
+
+[tables]
+school=schedule
+calendar=schedule
+calendaraggregate=schedule
+schoolyear=schedule
+student=studentdemographics
+studentenrollment=enrollment
+course=roster
+section=roster
+studentroster=roster
+
+[source]
+dbname=
+host=
+password=
+port=
+username=
+
